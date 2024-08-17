@@ -1,0 +1,20 @@
+git config --global user.name "Tasneem Alaa"
+git config --global user.email tasnemalaa30@gmail.com
+cd '/home/Tasneem Alaa'
+git clone https://github.com/tasnem30/OSC_Linux_Tasks_Summer_Training.git
+cd OSC_Linux_Tasks_Summer_Training
+mkdir task-2
+cd task-2
+touch greeting.txt
+echo "Hello world" > greeting.txt
+git add greeting.txt
+git commit -m"Added greeting"
+git branch intro
+git switch intro
+echo "I love Git" >> greeting.txt
+git add greeting.txt
+git commit -m"Added I love Git"
+git switch main
+git merge intro
+git tag v1
+git push origin main --tags
